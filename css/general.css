@@ -114,6 +114,7 @@ body {
 
   /* put the transition on the orginal "state" */
   transition: background-color 0.5s;
+  transition: box-shadow 0.5s;
 }
 
 .btn--full:link,
@@ -170,7 +171,34 @@ body {
   align-items: center;
 }
 
+.link:link,
+.link:visited {
+  color: #e67e22;
+  text-decoration: none;
+  border-bottom: 0.1rem solid currentColor;
+  padding-bottom: 0.2rem;
+  transition: border-bottom-color 0.3s;
+}
+
+.link:hover,
+.link:active {
+  color: #cf711f;
+  border-bottom-color: transparent;
+}
+
 /* HELPER RULES */
 .margin-right-sm {
   margin-right: 1.6rem !important;
+}
+
+.margin-bottom-md {
+  margin-bottom: 4.8rem !important;
+}
+
+.center-text {
+  text-align: center;
+}
+
+strong {
+  font-weight: 500;
 }
